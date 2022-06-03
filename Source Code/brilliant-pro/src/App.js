@@ -1,8 +1,9 @@
 import './App.css';
 import Homepage from './Components/Common Interface/Homepage/Homepage';
 import {Routes, Route, BrowserRouter as Router, useLocation} from 'react-router-dom';
-import Navbar from './Components/Common Interface/Navbar/Navbar';
+import Navbar from './Components/Common Interface/Homepage/Navbar/Navbar';
 import {useLayoutEffect } from 'react'
+import Login from './Components/Common Interface/Login/Login';
 
 const Wrapper = ({children}) => {
   const location = useLocation();
@@ -18,7 +19,8 @@ const App = () => {
       <Wrapper>
         <Navbar />
         <Routes>
-          <Route exact path='/' element={<Homepage/>} />   
+          <Route exact path='/' element={<Homepage/>} />
+          <Route exact path='/Login' element={<Login/>} />   
         </Routes>
       </Wrapper>
     </Router>   
