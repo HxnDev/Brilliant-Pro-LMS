@@ -14,6 +14,35 @@ const Login= (props)=>{
       const [email, setEmail] = useState('');
       const [password, setPassword] = useState('');
 
+      function tryLogin() {
+          // get data from mongodb
+
+          const requestOptions = {
+              method: 'POST',
+          };
+
+          fetch('http://localhost:3001/getLearner?email=' + email, requestOptions)
+              .then(response => response.text())
+              .then(result => {
+                  console.log(result)
+
+                  result = JSON.parse(result)
+                  result = result[0]
+
+                  console.log(result)
+                  console.log(typeof(result.password))
+
+                  console.log(result.password)
+                  if (result.password === password) {
+                      console.log("Login successful")
+                  }
+                  else {
+                      console.log("Login unsuccessful")
+                  }
+              })
+              .catch(error => console.log('Error: ', error));
+      }
+
   return (
         <div className="login-base" style={{marginTop: 120}}>
             <div className="login-content">
@@ -23,7 +52,7 @@ const Login= (props)=>{
                 <div className="login-form">
                     <div className="login-form-group">
                         <label htmlFor="username">Email Address</label>
-                        <input 
+                        <input onChange={function(event) {setEmail(event.target.value)}}
                             type="text" 
                             name="address" 
                             placeholder="Email" 
@@ -35,7 +64,7 @@ const Login= (props)=>{
                     </div>
                     <div className="login-form-group">
                         <label htmlFor="password">Password</label>
-                        <input 
+                        <input onChange={function(event) {setPassword(event.target.value)}}
                             type="password" 
                             name="password" 
                             placeholder="Password"
@@ -46,7 +75,7 @@ const Login= (props)=>{
                 </div>
             </div>
 
-            <button className="login-btn" onClick={routeChange}>
+            <button className="login-btn" onClick={tryLogin}>
                     <h4>Login</h4>                   
             </button>
 
