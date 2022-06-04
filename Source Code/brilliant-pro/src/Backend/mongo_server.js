@@ -31,6 +31,45 @@ app.post('/getLearner', function (req, res) {
     })
 })
 
+// get an admin
+app.post('/getAdmin', function (req, res) {
+    let query = {email: req.query.email}
+
+    mongoClient.connect(function (err, client) {
+        const db = client.db(dbName);
+
+        db.collection("admins")
+            .find(query)
+            .toArray(function (err, items) {
+                if (err) throw err;
+                res.send(items[0]);
+            });
+    })
+})
+
+// add a learner
+app.post('/addLearner', function (req, res) {
+
+    const learnerObject = {
+        email: req.query.email,
+        password: req.query.password,
+        name: req.query.name
+    };
+
+    console.log(learnerObject)
+
+    mongoClient.connect(function (err, client) {
+        const db = client.db(dbName);
+        db.collection("learners").insertOne(learnerObject)
+            .then(result => {
+                console.log(result);
+                res.send(result);
+        });
+    });
+})
+
+
+
 // set up server
 module.exports = app;
 app.listen(3001, () =>
