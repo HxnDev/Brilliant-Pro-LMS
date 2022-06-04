@@ -1,9 +1,11 @@
 import React from 'react';
 import './Homepage.css';
+import Navbar from './Navbar/Navbar';
 
 function Homepage() {
   return (
     <>
+      <Navbar/>
       <div className='home-section'>
         <div className='home-text-wrapper' >
           <h1 className='home-heading dark'>

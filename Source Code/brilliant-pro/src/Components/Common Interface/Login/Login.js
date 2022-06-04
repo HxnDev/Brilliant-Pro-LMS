@@ -1,5 +1,6 @@
 import React, { useState, useEffect} from "react"
 import { Link, useNavigate } from "react-router-dom";
+import Navbar from "../Homepage/Navbar/Navbar";
 import loginimage from "./images/login.png"
 import "./Login.css";
 
@@ -46,6 +47,8 @@ const Login= (props)=>{
       }
 
   return (
+    <>
+      <Navbar />
         <div className="login-base" style={{marginTop: 120}}>
             <div className="login-content">
                 <div className="login-image">
@@ -89,6 +92,7 @@ const Login= (props)=>{
                     <h4>Admin?</h4>                   
             </button>
         </div>
+    </>
   );
 }
 

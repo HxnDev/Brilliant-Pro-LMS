@@ -2,6 +2,7 @@ import React, { useState, useEffect} from "react"
 import { Link, useNavigate } from "react-router-dom";
 import adminloginimage from "./images/admin-login.webp"
 import "./AdminLogin.css";
+import Navbar from "../../Common Interface/Homepage/Navbar/Navbar";
 
 const AdminLogin= (props)=>{
     let navigate = useNavigate();
@@ -36,6 +37,9 @@ const AdminLogin= (props)=>{
       }
 
   return (
+      <>
+      <Navbar />
+      
         <div className="admin-login-base" style={{marginTop: 120}}>
             <div className="admin-login-content">
                 <div className="admin-login-image">
@@ -71,6 +75,7 @@ const AdminLogin= (props)=>{
                     <h4>Login</h4>                   
             </button>
         </div>
+        </>
   );
 }
 

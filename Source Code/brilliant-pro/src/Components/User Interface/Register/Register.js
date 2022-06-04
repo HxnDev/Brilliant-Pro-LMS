@@ -1,5 +1,6 @@
 import React, { useState, useEffect} from "react"
 import { Link, useNavigate } from "react-router-dom";
+import Navbar from "../../Common Interface/Homepage/Navbar/Navbar";
 import registerimage from "./images/register.svg"
 import "./Register.css";
 
@@ -16,6 +17,9 @@ const Register= (props)=>{
       const [password, setPassword] = useState('');
 
   return (
+      <>
+      <Navbar />
+      
         <div className="register-base" style={{marginTop: 120}}>
             <div className="register-content">
                 <div className="register-image">
@@ -62,6 +66,7 @@ const Register= (props)=>{
                     <h4>Register</h4>                   
             </button>
         </div>
+        </>
   );
 }
 

@@ -19,7 +19,6 @@ const App = () => {
   return (
     <Router>
       <Wrapper>
-        <Navbar />
         <Routes>
           <Route exact path='/' element={<Homepage/>} />
           <Route exact path='/Login' element={<Login/>} /> 
