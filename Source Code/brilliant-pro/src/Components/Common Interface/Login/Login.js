@@ -24,15 +24,7 @@ const Login= (props)=>{
           fetch('http://localhost:3001/getLearner?email=' + email, requestOptions)
               .then(response => response.text())
               .then(result => {
-                  console.log(result)
-
                   result = JSON.parse(result)
-                  result = result[0]
-
-                  console.log(result)
-                  console.log(typeof(result.password))
-
-                  console.log(result.password)
                   if (result.password === password) {
                       console.log("Login successful")
                   }

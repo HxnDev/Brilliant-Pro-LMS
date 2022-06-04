@@ -26,7 +26,7 @@ app.post('/getLearner', function (req, res) {
             .find(query)
             .toArray(function (err, items) {
                 if (err) throw err;
-                res.send(items);
+                res.send(items[0]);
             });
     })
 })
