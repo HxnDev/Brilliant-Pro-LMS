@@ -1,5 +1,5 @@
 import React, { useState, useEffect} from "react"
-import { Link, useNavigate } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 import Navbar from "../Homepage/Navbar/Navbar";
 import loginimage from "./images/login.png"
 import "./Login.css";
@@ -8,7 +8,7 @@ const Login= (props)=>{
     let navigate = useNavigate();
     
     const login = () =>{ 
-        let path = '/LandingPage'; 
+        let path = '/UserDashboard'; 
         navigate(path);
       }
 

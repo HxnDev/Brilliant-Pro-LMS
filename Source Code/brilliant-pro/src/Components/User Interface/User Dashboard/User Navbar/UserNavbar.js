@@ -41,10 +41,22 @@ function UserNavbar() {
                     </Link>
                   </li>
 
-                  <li className='user-btn-item'>
-                      <Link to='/Login' className='user-btn-links'>
-                          Login
-                      </Link>
+                  <li className='user-nav-item'>
+                    <Link to='/CompletedCourses' className='user-nav-links' onClick={closeMobileMenu}>
+                      Completed Courses
+                    </Link>
+                  </li>
+
+                  <li className='user-nav-item'>
+                    <Link to='/IncompleteCourses' className='user-nav-links' onClick={closeMobileMenu}>
+                      Incomplete Courses
+                    </Link>
+                  </li>
+
+                  <li className='user-nav-item'>
+                    <Link to='/Certificates' className='user-nav-links' onClick={closeMobileMenu}>
+                      Certificates
+                    </Link>
                   </li>
                 </ul>
             </div>
