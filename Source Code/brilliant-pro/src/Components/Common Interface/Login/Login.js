@@ -6,8 +6,18 @@ import "./Login.css";
 const Login= (props)=>{
     let navigate = useNavigate();
     
-    const routeChange = () =>{ 
-        let path = '/Surveillance'; 
+    const login = () =>{ 
+        let path = '/LandingPage'; 
+        navigate(path);
+      }
+
+      const register = () =>{ 
+        let path = '/Register'; 
+        navigate(path);
+      }
+
+      const admin = () =>{ 
+        let path = '/AdminLogin'; 
         navigate(path);
       }
 
@@ -67,15 +77,15 @@ const Login= (props)=>{
                 </div>
             </div>
 
-            <button className="login-btn" onClick={tryLogin}>
+            <button className="login-btn" onClick={login}>
                     <h4>Login</h4>                   
             </button>
 
-            <button className="signup-btn" onClick={routeChange}>
+            <button className="signup-btn" onClick={register}>
                     <h4>Register Now</h4>                   
             </button>
 
-            <button className="adminlogin-btn" onClick={routeChange}>
+            <button className="adminlogin-btn" onClick={admin}>
                     <h4>Admin?</h4>                   
             </button>
         </div>
