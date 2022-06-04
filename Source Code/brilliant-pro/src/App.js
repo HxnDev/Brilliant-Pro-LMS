@@ -5,6 +5,7 @@ import Navbar from './Components/Common Interface/Homepage/Navbar/Navbar';
 import {useLayoutEffect } from 'react'
 import Login from './Components/Common Interface/Login/Login';
 import Register from './Components/User Interface/Register/Register';
+import AdminLogin from './Components/Admin Interface/Admin Login/AdminLogin';
 
 const Wrapper = ({children}) => {
   const location = useLocation();
@@ -23,6 +24,7 @@ const App = () => {
           <Route exact path='/' element={<Homepage/>} />
           <Route exact path='/Login' element={<Login/>} /> 
           <Route exact path='/Register' element={<Register/>} />   
+          <Route exact path='/AdminLogin' element={<AdminLogin/>} />  
         </Routes>
       </Wrapper>
     </Router>   
