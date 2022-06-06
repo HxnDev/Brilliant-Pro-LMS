@@ -52,12 +52,6 @@ function UserNavbar() {
                       Incomplete Courses
                     </Link>
                   </li>
-
-                  <li className='user-nav-item'>
-                    <Link to='/Certificates' className='user-nav-links' onClick={closeMobileMenu}>
-                      Certificates
-                    </Link>
-                  </li>
                 </ul>
             </div>
         </div>

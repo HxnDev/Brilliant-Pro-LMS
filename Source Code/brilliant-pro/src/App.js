@@ -6,6 +6,8 @@ import Login from './Components/Common Interface/Login/Login';
 import Register from './Components/User Interface/Register/Register';
 import AdminLogin from './Components/Admin Interface/Admin Login/AdminLogin';
 import UserDashboard from './Components/User Interface/User Dashboard/UserDashboard';
+import CompletedCourses from './Components/User Interface/User Dashboard/CompletedCourses/CompletedCourses';
+import IncompleteCourses from './Components/User Interface/User Dashboard/IncompleteCourses/IncompleteCourses';
 
 const Wrapper = ({children}) => {
   const location = useLocation();
@@ -25,6 +27,8 @@ const App = () => {
           <Route exact path='/Register' element={<Register/>} />   
           <Route exact path='/AdminLogin' element={<AdminLogin/>} />  
           <Route exact path='/UserDashboard' element={<UserDashboard/>} />
+          <Route exact path='/CompletedCourses' element={<CompletedCourses/>} />
+          <Route exact path='/IncompleteCourses' element={<IncompleteCourses/>} />
         </Routes>
       </Wrapper>
     </Router>   
