@@ -9,6 +9,7 @@ import UserDashboard from './Components/User Interface/User Dashboard/UserDashbo
 import CompletedCourses from './Components/User Interface/User Dashboard/CompletedCourses/CompletedCourses';
 import IncompleteCourses from './Components/User Interface/User Dashboard/IncompleteCourses/IncompleteCourses';
 import AddUser from './Components/Admin Interface/Admin Functionalities/Add User To Course/AddUser';
+import CourseDesc from './Components/Common Interface/Courses/CourseDesc';
 
 const Wrapper = ({children}) => {
   const location = useLocation();
@@ -20,21 +21,21 @@ const Wrapper = ({children}) => {
 
 const App = () => {
   return (
-    // <AddUser />
-    <Router>
-      <Wrapper>
-        <Routes>
-          <Route exact path='/' element={<Homepage/>} />
-          <Route exact path='/Login' element={<Login/>} /> 
-          <Route exact path='/Register' element={<Register/>} />   
-          <Route exact path='/AdminLogin' element={<AdminLogin/>} />  
-          <Route exact path='/UserDashboard' element={<UserDashboard/>} />
-          <Route exact path='/CompletedCourses' element={<CompletedCourses/>} />
-          <Route exact path='/IncompleteCourses' element={<IncompleteCourses/>} />
-          <Route exact path='/AddUser' element={<AddUser/>} />
-        </Routes>
-      </Wrapper>
-    </Router>   
+  <Router>
+    <Wrapper>
+      <Routes>
+        <Route exact path='/' element={<Homepage/>} />
+        <Route exact path='/Login' element={<Login/>} /> 
+        <Route exact path='/Register' element={<Register/>} />   
+        <Route exact path='/AdminLogin' element={<AdminLogin/>} />  
+        <Route exact path='/UserDashboard' element={<UserDashboard/>} />
+        <Route exact path='/CompletedCourses' element={<CompletedCourses/>} />
+        <Route exact path='/IncompleteCourses' element={<IncompleteCourses/>} />
+        <Route exact path='/AddUser' element={<AddUser/>} />
+        <Route exact path='/CourseDesc' element={<CourseDesc/>} />
+      </Routes>
+    </Wrapper>
+  </Router>   
   );
 }
 
