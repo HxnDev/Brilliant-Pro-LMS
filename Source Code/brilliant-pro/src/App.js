@@ -8,6 +8,7 @@ import AdminLogin from './Components/Admin Interface/Admin Login/AdminLogin';
 import UserDashboard from './Components/User Interface/User Dashboard/UserDashboard';
 import CompletedCourses from './Components/User Interface/User Dashboard/CompletedCourses/CompletedCourses';
 import IncompleteCourses from './Components/User Interface/User Dashboard/IncompleteCourses/IncompleteCourses';
+import AddUser from './Components/Admin Interface/Admin Functionalities/Add User To Course/AddUser';
 
 const Wrapper = ({children}) => {
   const location = useLocation();
@@ -19,6 +20,7 @@ const Wrapper = ({children}) => {
 
 const App = () => {
   return (
+    // <AddUser />
     <Router>
       <Wrapper>
         <Routes>
@@ -29,6 +31,7 @@ const App = () => {
           <Route exact path='/UserDashboard' element={<UserDashboard/>} />
           <Route exact path='/CompletedCourses' element={<CompletedCourses/>} />
           <Route exact path='/IncompleteCourses' element={<IncompleteCourses/>} />
+          <Route exact path='/AddUser' element={<AddUser/>} />
         </Routes>
       </Wrapper>
     </Router>   
