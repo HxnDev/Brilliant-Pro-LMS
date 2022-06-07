@@ -15,6 +15,7 @@ import CourseDesc from './Components/Common Interface/Courses/CourseDesc';
 import Feedback from './Components/User Interface/View Assessments/Assessment Feedback/Feedback';
 import Assessment from './Components/User Interface/View Assessments/Assessment';
 import ReactPayPal from './Components/User Interface/PayPal/PayPal';
+import Admin from './Components/Admin Interface/Admin Dashboard/Admin';
 
 
 const Wrapper = ({children}) => {
@@ -43,6 +44,7 @@ const App = () => {
         <Route exact path='/Feedback' element={<Feedback/>} />
         <Route exact path='/Assessment' element={<Assessment/>} />
         <Route exact path='/PayPal' element={<ReactPayPal/>} />
+        <Route exact path='/Admin' element={<Admin/>} />
       </Routes>
     </Wrapper>
   </Router>   

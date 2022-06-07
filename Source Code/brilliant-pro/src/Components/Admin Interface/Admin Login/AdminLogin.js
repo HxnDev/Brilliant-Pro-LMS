@@ -8,7 +8,7 @@ const AdminLogin= (props)=>{
     let navigate = useNavigate();
     
     const login = () =>{ 
-        let path = '/AdminDashboard'; 
+        let path = '/Admin'; 
         navigate(path);
       }
 

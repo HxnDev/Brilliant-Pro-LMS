@@ -1,0 +1,16 @@
+.courses-div {
+    width: 90%;
+    background-color: antiquewhite;
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 30px;
+    margin-top: 50px;
+    height: 400px;
+}
+
+.piechart-div {
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+    margin-top: 20px;
+}
