@@ -12,6 +12,7 @@ import CompletedCourses from './Components/User Interface/User Dashboard/Complet
 import IncompleteCourses from './Components/User Interface/User Dashboard/IncompleteCourses/IncompleteCourses';
 import AddUser from './Components/Admin Interface/Admin Functionalities/Add User To Course/AddUser';
 import CourseDesc from './Components/Common Interface/Courses/CourseDesc';
+import Feedback from './Components/User Interface/View Assessments/Assessment Feedback/Feedback';
 
 const Wrapper = ({children}) => {
   const location = useLocation();
@@ -23,6 +24,7 @@ const Wrapper = ({children}) => {
 
 const App = () => {
   return (
+    
   <Router>
     <Wrapper>
       <Routes>
@@ -35,6 +37,7 @@ const App = () => {
         <Route exact path='/IncompleteCourses' element={<IncompleteCourses/>} />
         <Route exact path='/AddUser' element={<AddUser/>} />
         <Route exact path='/CourseDesc' element={<CourseDesc/>} />
+        <Route exact path='/Feedback' element={<Feedback/>} />
       </Routes>
     </Wrapper>
   </Router>   

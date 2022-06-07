@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 function Courses(props) {
   return (
     <>
-    <Link to={props.courselink} className='course-container-card' >
+    <Link to={props.courselink} state={{coursetitle:props.coursetitle , img: props.img, coursedesc:props.coursedesc, status: props.status, progress: props.progress}} className='course-container-card' >
         <div className='course-container-cardInfo'>
             <div>
                 <img src={props.img} className='course-img' />

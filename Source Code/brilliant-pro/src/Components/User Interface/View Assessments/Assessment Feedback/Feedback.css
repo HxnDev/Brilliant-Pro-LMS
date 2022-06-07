@@ -1,0 +1,31 @@
+
+.feedback-title{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 15%;
+    align-items: left;
+    color: rgb(0, 0, 0);
+}
+
+.feedback-heading{
+    font-size: 100px;
+    font-family: "Quicksand";
+    padding-left: 1%;
+    width: 100%;
+    align-self: center;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.feedback-img{
+    align-items: center;
+    width: 700px;
+    height: 500px;
+}
+
+.feedback-desc{
+    font-size: 25px;
+    padding-left: 1%;
+    line-height: 1.3;
+}
