@@ -60,7 +60,7 @@
   .nav-item {
     height: 80px;
     font-size: 25px;
-    margin-left: -30px;
+    margin-left: 400px;
     padding-right: 10px;
     margin-right: 50px;
     border-bottom: 2px solid transparent;
@@ -71,7 +71,7 @@
     height: 80px;
     font-size: 25px;
     margin-left: -30px;
-    margin-right: 50px;
+    margin-right: 60px;
     border-bottom: 2px solid transparent;
   }
 
