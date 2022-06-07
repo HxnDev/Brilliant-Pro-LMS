@@ -33,7 +33,7 @@ function UserDashboard() {
                             return <div key={id} className='course-container-card'>
                             <Courses 
                             courseid = {data1.courseid}
-                            courselink = {data1.courselink}
+                            courselink = "/CourseDesc"
                             img = {data1.imgpath}
                             coursetitle = {data1.coursetitle}
                             coursedesc = {data1.coursedesc}

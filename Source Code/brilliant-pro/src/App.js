@@ -16,6 +16,7 @@ import Feedback from './Components/User Interface/View Assessments/Assessment Fe
 import Assessment from './Components/User Interface/View Assessments/Assessment';
 import ReactPayPal from './Components/User Interface/PayPal/PayPal';
 import Admin from './Components/Admin Interface/Admin Dashboard/Admin';
+import AddQuiz from './Components/Admin Interface/Admin Functionalities/Add Assessments/AddQuiz';
 
 
 const Wrapper = ({children}) => {
@@ -45,6 +46,7 @@ const App = () => {
         <Route exact path='/Assessment' element={<Assessment/>} />
         <Route exact path='/PayPal' element={<ReactPayPal/>} />
         <Route exact path='/Admin' element={<Admin/>} />
+        <Route exact path='/AddQuiz' element={<AddQuiz/>} />
       </Routes>
     </Wrapper>
   </Router>   
