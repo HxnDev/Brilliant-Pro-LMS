@@ -9,10 +9,10 @@ function Homepage() {
       <div className='home-section'>
         <div className='home-text-wrapper' >
           <h1 className='home-heading dark'>
-              Creating <span>Smart Solutions</span>
+              Brilliant Pro
           </h1>
           <p className= 'home-subtitle dark'>
-              At Think Vision, we provide real-time monitoring and threat alerts using deep learning and video analytics.
+              Here we provide unlimited not-free courses. You can get certifications and learn alongwith making your life miserable because this project took our night's sleep and was indeed TORTURE.
           </p>
         </div>
       </div>
