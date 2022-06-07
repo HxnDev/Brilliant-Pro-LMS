@@ -1,0 +1,29 @@
+.whole-block {
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    justify-content: space-evenly;
+}
+
+.question-block {
+    background-color: lightgrey;
+    align-self: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 40px;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.quiz-submit-btn {
+    padding: 20px;
+    border-radius: 10px;
+    width: 10%;
+    background-color: lightslategrey;
+    color: white;
+}
+
+.text-center-div {
+    text-align: center;
+    padding: 30px;
+}

@@ -1,10 +1,12 @@
 import React, { useState, useEffect} from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
+import ReactPayPal from '../../User Interface/PayPal/PayPal';
 import './CourseDesc.css';
+<script src="https://www.paypalobjects.com/api/checkout.js" data-version-4></script>
 
 // Will check if the course has been completed before or not
 function IsNew(status){
-    if (status == "true"){
+    if (status){
         return true;
     }
     else {
@@ -14,6 +16,13 @@ function IsNew(status){
 }
 
 function CourseDesc() {
+
+    let navigate = useNavigate();
+    const [checkout, setCheckout] = React.useState(false);
+    
+    const PaymentGateway = () =>{ 
+        checkout = true;
+      }
 
     const state = useLocation()
 
@@ -41,9 +50,16 @@ function CourseDesc() {
     {IsNew(status) ? 
     <div className='bottom'>
         <p className='price'><span>Price = </span>$5 <span>only</span></p>
-        <button className="buy-btn">
+        {(checkout === true) 
+          ? <div>
+            <ReactPayPal />
+          </div> 
+          :
+        
+        <button className="buy-btn" onClick={() => {setCheckout(true)}}>
             <h4>Buy Course</h4>                   
         </button>
+}
     </div>
     :
     <div className='bar-parent'>

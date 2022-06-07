@@ -1,0 +1,120 @@
+[
+    {
+        "Name": "Quiz 1 General Knowledge",
+        "Time_duration_mins": 15,
+        "Minimum_passing": 3,
+        "Questions": [
+            {
+                "Statement": "Which of these is True?",
+                "Correct_op": "C",
+                "Options": [
+                    { 
+                        "Option": "A",
+                        "Text": "The earth is round" 
+                    },
+                    { 
+                        "Option": "B",
+                        "Text": "The earth is flat" 
+                    },
+                    { 
+                        "Option": "C",
+                        "Text": "The earth is a triangle" 
+                    },
+                    { 
+                        "Option": "D",
+                        "Text": "All of the above" 
+                    }
+                ]
+            },
+            {
+                "Statement": "Which of these is True?",
+                "Correct_op": "B",
+                "Options": [
+                    { 
+                        "Option": "A",
+                        "Text": "Johnny Depp won" 
+                    },
+                    { 
+                        "Option": "B",
+                        "Text": "Amber was not heard" 
+                    },
+                    { 
+                        "Option": "C",
+                        "Text": "Lmao ex dee" 
+                    },
+                    { 
+                        "Option": "D",
+                        "Text": "Hahaha" 
+                    }
+                ]
+            },
+            {
+                "Statement": "Which of these is True?",
+                "Correct_op": "D",
+                "Options": [
+                    { 
+                        "Option": "A",
+                        "Text": "Ew Web" 
+                    },
+                    { 
+                        "Option": "B",
+                        "Text": "Ew CG" 
+                    },
+                    { 
+                        "Option": "C",
+                        "Text": "Ew DL" 
+                    },
+                    { 
+                        "Option": "D",
+                        "Text": "All of the above" 
+                    }
+                ]
+            },
+            {
+                "Statement": "Which of these is True?",
+                "Correct_op": "B",
+                "Options": [
+                    { 
+                        "Option": "A",
+                        "Text": "I am an idiot sandwich" 
+                    },
+                    { 
+                        "Option": "B",
+                        "Text": "I am an idiot sandwich" 
+                    },
+                    { 
+                        "Option": "C",
+                        "Text": "I am an idiot sandwich" 
+                    },
+                    { 
+                        "Option": "D",
+                        "Text": "All of the above" 
+                    }
+                ]
+            },
+            {
+                "Statement": "Which of these is True?",
+                "Correct_op": "C",
+                "Options": [
+                    { 
+                        "Option": "A",
+                        "Text": "What is this data yar" 
+                    },
+                    { 
+                        "Option": "B",
+                        "Text": "Whats wrong with you Aysha" 
+                    },
+                    { 
+                        "Option": "C",
+                        "Text": "I love myself" 
+                    },
+                    { 
+                        "Option": "D",
+                        "Text": "Smile, beautiful" 
+                    }
+                ]
+            }
+        ]
+    }
+]
+

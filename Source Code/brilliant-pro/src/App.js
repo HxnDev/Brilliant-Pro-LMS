@@ -13,6 +13,9 @@ import IncompleteCourses from './Components/User Interface/User Dashboard/Incomp
 import AddUser from './Components/Admin Interface/Admin Functionalities/Add User To Course/AddUser';
 import CourseDesc from './Components/Common Interface/Courses/CourseDesc';
 import Feedback from './Components/User Interface/View Assessments/Assessment Feedback/Feedback';
+import Assessment from './Components/User Interface/View Assessments/Assessment';
+import ReactPayPal from './Components/User Interface/PayPal/PayPal';
+
 
 const Wrapper = ({children}) => {
   const location = useLocation();
@@ -38,6 +41,8 @@ const App = () => {
         <Route exact path='/AddUser' element={<AddUser/>} />
         <Route exact path='/CourseDesc' element={<CourseDesc/>} />
         <Route exact path='/Feedback' element={<Feedback/>} />
+        <Route exact path='/Assessment' element={<Assessment/>} />
+        <Route exact path='/PayPal' element={<ReactPayPal/>} />
       </Routes>
     </Wrapper>
   </Router>   
