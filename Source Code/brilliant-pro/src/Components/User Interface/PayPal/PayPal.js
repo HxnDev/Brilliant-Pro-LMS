@@ -49,7 +49,7 @@ export default function ReactPayPal() {
   // Default Render
   return (
     <div>
-      <h4>Total Amount in $. : 500 /-</h4>
+      <h4>Total Amount in $. : 5 /-</h4>
       <div ref={paypalRef} />
     </div>
   );
