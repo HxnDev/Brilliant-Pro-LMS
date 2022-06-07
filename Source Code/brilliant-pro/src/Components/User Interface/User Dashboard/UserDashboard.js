@@ -37,6 +37,7 @@ function UserDashboard() {
                             img = {data1.imgpath}
                             coursetitle = {data1.coursetitle}
                             coursedesc = {data1.coursedesc}
+                            status = "true"
                             />
                             </div>
                         })}

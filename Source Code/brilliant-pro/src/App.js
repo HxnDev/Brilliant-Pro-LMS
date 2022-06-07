@@ -19,6 +19,8 @@ import Admin from './Components/Admin Interface/Admin Dashboard/Admin';
 import AddQuiz from './Components/Admin Interface/Admin Functionalities/Add Assessments/AddQuiz';
 import MaterialsPage from './Components/Admin Interface/Admin Dashboard/Materials/MaterialsPage';
 import MaterialView from './Components/User Interface/MaterialView/MaterialView';
+import AddCourse from './Components/Admin Interface/Admin Functionalities/Add Course/AddCourse';
+import ListAll from './Components/Common Interface/List All Courses/ListAll';
 
 
 const Wrapper = ({children}) => {
@@ -51,6 +53,8 @@ const App = () => {
         <Route exact path='/AddQuiz' element={<AddQuiz/>} />
         <Route exact path='/Materials' element={<MaterialsPage/>} />
         <Route exact path='/MaterialView' element={<MaterialView/>} />
+        <Route exact path='/AddCourse' element={<AddCourse/>} />
+        <Route exact path='/ListAll' element={<ListAll/>} />
       </Routes>
     </Wrapper>
   </Router>   
