@@ -2,6 +2,7 @@ import React, { useState, useEffect} from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import ReactPayPal from '../../User Interface/PayPal/PayPal';
 import './CourseDesc.css';
+import CourseNavbar from './CourseNavbar/CourseNavbar';
 <script src="https://www.paypalobjects.com/api/checkout.js" data-version-4></script>
 
 // Will check if the course has been completed before or not
@@ -38,6 +39,7 @@ function CourseDesc() {
     const progress = state.state.progress
     return (
     <>
+    <CourseNavbar/>
     <div className='course-title'>
         <h1 className='title-heading'>{title}</h1>
         

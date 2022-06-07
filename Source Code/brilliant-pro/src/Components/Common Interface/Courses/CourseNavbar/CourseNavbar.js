@@ -35,35 +35,20 @@ function CourseNavbar() {
                   {click ? <FaTimes/> : <FaBars/>}
                 </div>
                 <ul className={click ? 'course-nav-menu active' : 'course-nav-menu'}>
+          
                   <li className='course-nav-item'>
-                    <Link to='/' className='course-nav-links' onClick={closeMobileMenu}>
-                      Home
-                    </Link>
-                  </li>
-
-                  <li className='course-nav-item'>
-                    <Link to='/Courses' className='course-nav-links' onClick={closeMobileMenu}>
-                      Courses
-                    </Link>
-                  </li>
-
-                  <li className='course-nav-item'>
-                    <Link to='/Materials' className='course-nav-links' onClick={closeMobileMenu}>
+                    <Link to='/MaterialView' className='course-nav-links' onClick={closeMobileMenu}>
                       Materials
                     </Link>
                   </li>
 
                   <li className='course-nav-item'>
-                    <Link to='/AddQuiz' className='course-nav-links' onClick={closeMobileMenu}>
+                    <Link to='/Assessment' className='course-nav-links' onClick={closeMobileMenu}>
                       Assessments
                     </Link>
                   </li>
 
-                  <li className='course-nav-item'>
-                    <Link to='/Learners' className='course-nav-links' onClick={closeMobileMenu}>
-                      Learners
-                    </Link>
-                  </li>
+                  
                 </ul>
             </div>
         </div>
